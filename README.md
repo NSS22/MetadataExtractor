@@ -20,6 +20,10 @@ Run process:
 ---
     npm start
     
+Run test:
+---
+    npm run test  
+    
 Check the items are saved to DB:
 ---
     npm run select:data
