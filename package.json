@@ -1,0 +1,30 @@
+{
+  "name": "metadata-extractor",
+  "version": "1.0.0",
+  "description": "Metadata Extractor",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "db_create": "sequelize db:create --config ./config/config.js",
+    "migrate:schema": "npm run db_create && sequelize db:migrate",
+    "select:data": "node selectData.js",
+    "test": "jest --detectOpenHandles"
+  },
+  "author": "NSS",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "junk": "^3.1.0",
+    "lodash": "^4.17.15",
+    "moment": "^2.25.1",
+    "mysql2": "^2.1.0",
+    "pg": "^8.0.3",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^5.21.7",
+    "xml2js": "^0.4.23"
+  },
+  "devDependencies": {
+    "jest": "^25.5.4",
+    "sequelize-cli": "^5.5.1"
+  }
+}
