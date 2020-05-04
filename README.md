@@ -4,6 +4,9 @@ Extract 'epub' folder from
 ---
 end put to the root directory
 
+Install dependency:
+---
+    npm i
 
 Create .env file:
 ----
@@ -11,6 +14,7 @@ Create .env file:
     DB_USERNAME=...
     DB_PASSWORD=...
     DB_HOST=127.0.0.1
+(Used PostgresQL as a database )    
     
 Run migration:
 ---
